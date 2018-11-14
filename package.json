@@ -1,12 +1,29 @@
 {
   "name": "react_boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "react boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config webpack/webpack.config.js",
+    "start": "webpack-dev-server --config webpack/webpack.config.js --open"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "react",
+    "webpack",
+    "boilerplate"
+  ],
+  "author": "Andrii Matiiko <andrew.matiyko@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amatiyko/react_boilerplate"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "3.2.0",
+    "path": "0.12.7",
+    "webpack": "4.25.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.10"
+  }
 }

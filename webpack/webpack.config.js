@@ -21,5 +21,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, appDir, 'index.html')
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|svg)$/,
+        loaders: ['file-loader']
+      },
+
+    ]
+  }
 }
